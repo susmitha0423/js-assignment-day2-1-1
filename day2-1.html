@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<script type="text/javascript">
+var myDate=new date();
+var myday=myDate.getDay();
+var weekday=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+document.write("today is:"+weekday[myDay]);
+document.write("<br/>")
+var hours=myDate.getHours();
+var amps=hours>=12?'PM':'AM';
+hours=hours%12;
+hours=hours?hours:12;
+var minutes=myDate.getMnutes();
+minutes=minutes<10?'0'+minutes:minutes;
+var mytime=hours+" "+amps+":"+minutes+":"+myDate.getMilliseconds();
+</script>
+</body>
+</html>
